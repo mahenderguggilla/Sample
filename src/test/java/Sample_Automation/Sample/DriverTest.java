@@ -15,11 +15,13 @@ public class DriverTest {
   @Test
   public void f() {
 	  
+	  System.out.println("Initialize the browser for Testing ");
 	  driver.get("http://www.google.com");
   }
   @BeforeTest
   public void beforeTest() {
 	  
+	  System.out.println("Creating FireFox Driver Object now...");
 	  driver=new FirefoxDriver();
 	  
   }
